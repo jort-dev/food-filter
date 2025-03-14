@@ -1,10 +1,55 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Food filter</title>
-    </head>
-    <body>
-        <h1>Food filter</h1>
 
-    </body>
+<head>
+    <title>Food filter</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <h1>Food filter</h1>
+    <p>Filter een lijst met voedsel.</p>
+    <label for="monthRange">Select Months:</label>
+    <input type="range" id="monthRangeStart" min="1" max="12" value="4">
+    <input type="range" id="monthRangeEnd" min="1" max="12" value="6">
+    <span id="rangeDisplay">April - June</span>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Naam</th>
+                <th>Seizoen</th>
+                <th>Fase</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Spinazie</td>
+                <td>maart - november</td>
+                <td>Follicular, Ovulatie, Luteale</td>
+            </tr>
+
+            <tr>
+                <td>Aardappel</td>
+                <td>januari - december</td>
+                <td>Follicular</td>
+            </tr>
+
+            <tr>
+                <td>Wortel</td>
+                <td>februari</td>
+                <td>Ovulatie</td>
+            </tr>
+
+            <tr>
+                <td>Broccoli</td>
+                <td>februari-maart</td>
+                <td>Follicular, Ovulatie</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
 </html>
